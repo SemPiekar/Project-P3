@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100vw;
+  height: 5vh;
+  font-weight: 900;
+  display: flex;
+  letter-spacing: 0.2rem;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0.8rem;
+  position: fixed;
+  transition: 200ms ease-in-out background-color, 200ms ease-in-out box-shadow;
+}
+
+.navActive {
+  background-color: #fff;
+}
+
+.navTextActive {
+  color: black;
+}
+
+ul {
+  display: flex;
+  justify-content: right;
+}
+
+li {
+  list-style-type: none;
+  margin: 0 1rem 0.8rem 0.8rem;
+}
+
+a,
+ul p {
+  text-decoration: none;
+  color: #fff;
+}
+
+a {
+  padding-bottom: 0.5rem;
+}
+
+a:hover,
+.navHome {
+  display: inline-block;
+  border-bottom: #fff solid;
+}
+
+.landingPage {
+  background-image: url(/Images/homeBackground.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+div {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landingPage div h1 {
+  color: #fff;
+  font-size: 6rem;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+
