@@ -1,4 +1,4 @@
-    <script src="../Functions/app.js"></script>
+    <script src="./Functions/app.js"></script>
 </body>
 
-</html>
+</html> 

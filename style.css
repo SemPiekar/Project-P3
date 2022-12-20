@@ -6,7 +6,6 @@
 }
 
 nav {
-  width: 100vw;
   height: 5vh;
   font-weight: 900;
   display: flex;
@@ -15,20 +14,23 @@ nav {
   justify-content: center;
   padding-top: 0.8rem;
   position: fixed;
-  transition: 200ms ease-in-out background-color, 200ms ease-in-out box-shadow;
+  background-image: url(./Images/homeBackground.jpg);
+  background-size: cover;
 }
 
-.navActive {
-  background-color: #fff;
-}
-
-.navTextActive {
-  color: black;
+ul p {
+  width: 8vw;
+  margin-left: 2rem;
 }
 
 ul {
   display: flex;
+}
+
+.navContainer {
+  display: flex;
   justify-content: right;
+  width: 90vw;
 }
 
 li {
@@ -44,6 +46,7 @@ ul p {
 
 a {
   padding-bottom: 0.5rem;
+  display: inline-block;
 }
 
 a:hover,
@@ -53,26 +56,102 @@ a:hover,
 }
 
 .landingPage {
-  background-image: url(/Images/homeBackground.jpg);
+  background-image: url(./Images/homeBackground.jpg);
   height: 100vh;
   background-size: cover;
 }
 
-div {
+#typingContainer {
+  margin: 10rem 0 0 2rem;
+  letter-spacing: 0.2rem;
+  width: 20vw;
+}
+
+.landingPage h1 {
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.games {
   height: 100vh;
-  width: 100vw;
+  background-image: url(./Images/gamesBackground.jpg);
+  background-size: cover;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.gamesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95vw;
+}
+
+.gamesCard {
+  height: 22rem;
+  width: 15rem;
+  background-color: #000;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  background-size: cover;
+  cursor: pointer;
+  transition: 350ms ease-in-out;
+}
+
+.gamesButton {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  border: solid #fff;
+  color: #fff;
+  font-size: 2.5rem;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.landingPage div h1 {
-  color: #fff;
-  font-size: 6rem;
-  text-align: center;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+@media only screen and (max-width: 390px) {
+  nav {
+    font-size: 0.5rem;
+    position: absolute;
+    background-image: none;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  ul p {
+    width: auto;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  #typingContainer {
+    width: auto;
+  }
+
+  .navContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navShow {
+    width: 20vw;
+    
+  }
+
+  .navHidden {
+    display: none;
+    width: 1px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navHome {
+    margin-left: 1rem;
+  }
 }
-
-
-

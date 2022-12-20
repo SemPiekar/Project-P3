@@ -1,13 +1,11 @@
-const nav = document.querySelector('nav');
-const navText = document.querySelector('ul p')
+var i = 0,
+text = ".periode 3 : team project scroll down to begin exploring";
 
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY >= 50) {
-        nav.classList.add('navActive');
-        navText.classList.add('navTextActive');
-    } else {
-        nav.classList.remove("navActive");
-        navText.classList.remove('navTextActive');
-    }
-})
+function typewriter() {
+  if (i < text.length) {
+    document.getElementById("typingContainer").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typewriter, 150);
+  }
+}
+typewriter();
