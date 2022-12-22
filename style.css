@@ -87,14 +87,19 @@ a:hover,
 }
 
 .gamesCard {
-  height: 22rem;
-  width: 15rem;
+  height: 20rem;
+  width: 13rem;
   background-color: #000;
   margin: 2rem;
   border-radius: 0.5rem;
   background-size: cover;
   cursor: pointer;
   transition: 350ms ease-in-out;
+}
+
+.gamesCard:hover {
+  width: 15rem;
+  height: 22rem;
 }
 
 .gamesButton {
@@ -107,6 +112,39 @@ a:hover,
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+footer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.footerBottom {
+  height: 60vh;
+  width: 100vw;
+  background-color: #0d0e23;
+  display: flex;
+  justify-content: center;
+}
+
+.footerMiddle {
+  width: 80vw;
+  height: 20vh;
+  background-color: #6feeff;
+  border-radius: 6rem;
+  bottom: 2rem;
+  position: relative;
+}
+
+.footerTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
 }
 
 @media only screen and (max-width: 390px) {
@@ -141,7 +179,6 @@ a:hover,
 
   .navShow {
     width: 20vw;
-    
   }
 
   .navHidden {
@@ -153,5 +190,10 @@ a:hover,
 
   .navHome {
     margin-left: 1rem;
+  }
+  .gamesCard {
+    width: 20vw;
+    height: 15vh;
+    margin: 0.5rem;
   }
 }

@@ -21,7 +21,6 @@
             <img class="gamesCard" src="/Images/gamesSpiderman.jpg" alt="">
             <img class="gamesCard" src="/Images/gamesNeedForSpeed.jpg" alt="">
             <img class="gamesCard" src="/Images/gamesGodOfWar.jpg" alt="">
-
         </div>
         <div class="gamesButton"><i class="fa-solid fa-arrow-right"></i></div>
     </section>
