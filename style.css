@@ -61,10 +61,10 @@ a:hover,
   background-size: cover;
 }
 
-#typingContainer {
+#typingContainer,
+#typingContainer1 {
   margin: 10rem 0 0 2rem;
   letter-spacing: 0.2rem;
-  width: 20vw;
 }
 
 .landingPage h1 {
@@ -74,77 +74,76 @@ a:hover,
 
 .games {
   height: 100vh;
-  background-image: url(./Images/gamesBackground.jpg);
+  background-image: url(/Images/gamesBackground.jpg);
   background-size: cover;
-  display: flex;
-  align-items: center;
 }
 
-.gamesContainer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 95vw;
-}
-
-.gamesCard {
-  height: 20rem;
-  width: 13rem;
-  background-color: #000;
-  margin: 2rem;
-  border-radius: 0.5rem;
-  background-size: cover;
-  cursor: pointer;
-  transition: 350ms ease-in-out;
-}
-
-.gamesCard:hover {
-  width: 15rem;
-  height: 22rem;
-}
-
-.gamesButton {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 4rem;
-  border: solid #fff;
-  color: #fff;
-  font-size: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer {
-  height: 100vh;
+.games__list {
+  height: 35vh;
   width: 100vw;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  margin: 1rem;
+  background-color: gray;
 }
 
-.footerBottom {
-  height: 60vh;
-  width: 100vw;
-  background-color: #0d0e23;
+.games__cards {
   display: flex;
-  justify-content: center;
-}
-
-.footerMiddle {
-  width: 80vw;
-  height: 20vh;
-  background-color: #6feeff;
-  border-radius: 6rem;
-  bottom: 2rem;
-  position: relative;
-}
-
-.footerTop {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 100vh;
+}
+
+.games__header {
+  width: 20vw;
+  height: 20vh;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.games__box {
+  width: 20vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  border: solid red 1px;
+}
+.paradox_interactive {
+  background-image: url(/Images/paradox-interactive.png);
+  background-color: #fff;
+  background-size: cover;
+  width: 18vw;
+  height: 20vh;
+  border-radius: 2rem;
+}
+
+.ea {
+  background-image: url(/Images/ea.png);
+  background-color: #fff;
+  background-size: cover;
+  width: 18vw;
+  height: 20vh;
+  border-radius: 2rem;
+}
+
+.paradox_interactive video, .ea video {
+  width: 18vw;
+  height: 20vh;
+  position: absolute;
+  opacity: 0;
+  border-radius: 2rem;
+  transition: all ease-in-out 400ms;
+}
+
+.paradox_interactive video:hover {
+  opacity: 1;
+  border: solid rgb(255, 255, 255) 2px;
+}
+
+.ea video:hover {
+  opacity: 1;
+  border: solid rgb(255, 255, 255) 2px;
 }
 
 @media only screen and (max-width: 390px) {
@@ -190,10 +189,5 @@ footer {
 
   .navHome {
     margin-left: 1rem;
-  }
-  .gamesCard {
-    width: 20vw;
-    height: 15vh;
-    margin: 0.5rem;
   }
 }

@@ -1,5 +1,5 @@
-var i = 0,
-text = ".periode 3 : team project scroll down to begin exploring";
+var i = 0;
+text = ".periode 3 : team project";
 
 function typewriter() {
   if (i < text.length) {
