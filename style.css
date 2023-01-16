@@ -197,3 +197,74 @@ footer {
     margin: 0.5rem;
   }
 }
+/* ABOUT US CSS */
+:root{
+  --AU_borders: #0A1535;
+  --AU_background: #D9D9D9;
+}
+.AU_main{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.AU_borderS{
+  width: 30%;
+  height: 0.8rem;
+  background-color: var(--AU_borders);
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+
+}
+.AU_border{
+  width: 92%;
+  height: 0.8rem;
+  background-color: var(--AU_borders);
+  border-radius: 32px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.AU_h1{
+  margin-left: 1rem;
+  align-self: flex-start;
+  font-size: 2rem;
+}
+.AU_info{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  background-color: var(--AU_background);
+}
+.AU_info img{
+  width: 30%;
+  margin: 1rem;
+  border: solid 0.2rem black;
+}
+.AU_info p{
+  width: 65%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.AU_profile{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--AU_background);
+}
+.AU_profile img{
+  width: 20%;
+  margin: 1rem;
+  border: solid 0.2rem black;
+  background-color: var(--AU_borders);
+}
+.AU_profile p{
+  width: 75%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+/* EIND ABOUT US CSS */
